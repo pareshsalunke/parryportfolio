@@ -1,0 +1,106 @@
+import Link from 'next/link';
+import {ArrowRight, Github, Linkedin, Mail, ChevronDown} from 'lucide-react';
+import GradientBadge from '@/components/ui/GradientBadge';
+
+export default function HeroSection() {
+  return (
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
+      {/* Background glow */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            'radial-gradient(ellipse 80% 50% at 50% -10%, rgba(59,130,246,0.15) 0%, transparent 70%)',
+        }}
+      />
+
+      {/* Grid pattern */}
+      <div
+        className="absolute inset-0 pointer-events-none opacity-20"
+        style={{
+          backgroundImage:
+            'linear-gradient(rgba(148,163,184,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,0.05) 1px, transparent 1px)',
+          backgroundSize: '64px 64px',
+        }}
+      />
+
+      <div className="relative z-10 max-w-4xl mx-auto text-center space-y-8">
+        {/* Eyebrow badge */}
+        <GradientBadge>
+          <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
+          Software Engineer → Product Manager
+        </GradientBadge>
+
+        {/* Headline */}
+        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-slate-900 dark:text-slate-100 leading-tight">
+          Building products at the{' '}
+          <span
+            style={{
+              backgroundImage: 'linear-gradient(to right, #60a5fa, #a78bfa)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+            }}>
+            intersection
+          </span>{' '}
+          of tech & users
+        </h1>
+
+        {/* Subheadline */}
+        <p className="text-xl sm:text-2xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
+          I&apos;m{' '}
+          <span className="text-slate-800 dark:text-slate-200 font-semibold">Paresh Salunke</span> — a Senior Product
+          Manager who writes code. I turn complex technical problems into products people love.
+        </p>
+
+        {/* CTAs */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Link
+            href="/projects"
+            className="inline-flex items-center gap-2 px-7 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-blue-900/30">
+            View My Work <ArrowRight className="w-4 h-4" />
+          </Link>
+          <Link
+            href="/case-studies"
+            className="inline-flex items-center gap-2 px-7 py-3.5 bg-transparent border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-semibold rounded-xl transition-all duration-200">
+            Read Case Studies
+          </Link>
+        </div>
+
+        {/* Social links */}
+        <div className="flex items-center justify-center gap-6 pt-2">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 transition-colors"
+            aria-label="LinkedIn">
+            <Linkedin className="w-5 h-5" />
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 transition-colors"
+            aria-label="GitHub">
+            <Github className="w-5 h-5" />
+          </a>
+          <a
+            href="mailto:paresh@example.com"
+            className="text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 transition-colors"
+            aria-label="Email">
+            <Mail className="w-5 h-5" />
+          </a>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <a
+        href="#about"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-slate-400 dark:text-slate-600 hover:text-slate-600 dark:hover:text-slate-400 transition-colors animate-bounce"
+        aria-label="Scroll down">
+        <ChevronDown className="w-6 h-6" />
+      </a>
+    </section>
+  );
+}
