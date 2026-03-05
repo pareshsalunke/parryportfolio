@@ -1,6 +1,7 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import ThemeProvider from '@/components/ThemeProvider';
+import {Analytics} from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: 'Paresh Salunke — Product Manager',
@@ -26,6 +27,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       </head>
       <body className="bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 antialiased">
         <ThemeProvider>{children}</ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
