@@ -9,7 +9,7 @@ export default function AboutSection() {
             eyebrow="About Me"
             title="Engineer who learned to think like a user"
           />
-          <div className="space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed">
+          <div className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed">
             <p>
               I started my career as a software engineer, spending years building APIs, data
               pipelines, and mobile apps. That foundation gave me something rare in product
@@ -18,8 +18,8 @@ export default function AboutSection() {
             </p>
             <p>
               The transition to PM happened when I realised I cared more about{' '}
-              <span className="text-slate-700 dark:text-slate-300">why</span> we were building something than{' '}
-              <span className="text-slate-700 dark:text-slate-300">how</span>. I moved into product roles focused on
+              <span className="text-slate-700 dark:text-slate-100">why</span> we were building something than{' '}
+              <span className="text-slate-700 dark:text-slate-100">how</span>. I moved into product roles focused on
               developer tools and data platforms — areas where my SWE background gives me a
               genuine edge.
             </p>
@@ -38,9 +38,9 @@ export default function AboutSection() {
             ].map(stat => (
               <div
                 key={stat.label}
-                className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-4 text-center">
-                <p className="text-2xl font-bold text-slate-900 dark:text-slate-100">{stat.value}</p>
-                <p className="text-xs text-slate-500 mt-1">{stat.label}</p>
+                className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-4 text-center">
+                <p className="text-2xl font-bold text-slate-900 dark:text-white">{stat.value}</p>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">{stat.label}</p>
               </div>
             ))}
           </div>

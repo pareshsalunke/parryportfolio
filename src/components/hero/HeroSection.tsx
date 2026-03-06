@@ -47,7 +47,7 @@ export default function HeroSection() {
         </h1>
 
         {/* Subheadline */}
-        <p className="text-xl sm:text-2xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl sm:text-2xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
           I&apos;m{' '}
           <span className="text-slate-800 dark:text-slate-200 font-semibold">Paresh Salunke</span> — a Senior Product
           Manager who writes code. I turn complex technical problems into products people love.
