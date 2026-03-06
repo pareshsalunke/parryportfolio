@@ -89,8 +89,8 @@ export default function AboutSection() {
             {/* Quick stats */}
             <div className="grid grid-cols-3 gap-4 pt-4">
               {[
-                {value: '5+', label: 'Years in PM'},
-                {value: '4+', label: 'Years in SWE'},
+                {value: '3+', label: 'Years in PM'},
+                {value: '7+', label: 'Years in SWE'},
                 {value: '12+', label: 'Products Shipped'},
               ].map(stat => (
                 <div

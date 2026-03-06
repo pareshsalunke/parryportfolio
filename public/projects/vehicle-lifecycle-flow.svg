@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 152" font-family="system-ui,-apple-system,BlinkMacSystemFont,sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#3b82f6"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="440" y="17" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1e293b" letter-spacing="0.3">Vehicle Lifecycle — Factory to Fleet Handover</text>
+
+  <!-- Phase 1: Factory -->
+  <rect x="8" y="26" width="108" height="90" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <circle cx="62" cy="50" r="13" fill="#3b82f6"/>
+  <text x="62" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">1</text>
+  <text x="62" y="73" text-anchor="middle" font-size="9" font-weight="600" fill="#1d4ed8">Factory</text>
+  <text x="62" y="86" text-anchor="middle" font-size="8" fill="#4b5563">Cert + eSIM</text>
+  <text x="62" y="99" text-anchor="middle" font-size="8" fill="#4b5563">Provisioning</text>
+  <line x1="117" y1="71" x2="131" y2="71" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- Phase 2: Logistics -->
+  <rect x="134" y="26" width="108" height="90" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <circle cx="188" cy="50" r="13" fill="#3b82f6"/>
+  <text x="188" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">2</text>
+  <text x="188" y="73" text-anchor="middle" font-size="9" font-weight="600" fill="#1d4ed8">Logistics</text>
+  <text x="188" y="86" text-anchor="middle" font-size="8" fill="#4b5563">Transit &amp; Storage</text>
+  <text x="188" y="99" text-anchor="middle" font-size="8" fill="#4b5563">Homologation</text>
+  <line x1="243" y1="71" x2="257" y2="71" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- Phase 3: First Connect -->
+  <rect x="260" y="26" width="108" height="90" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <circle cx="314" cy="50" r="13" fill="#3b82f6"/>
+  <text x="314" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">3</text>
+  <text x="314" y="73" text-anchor="middle" font-size="9" font-weight="600" fill="#1d4ed8">First Connect</text>
+  <text x="314" y="86" text-anchor="middle" font-size="8" fill="#4b5563">Bootstrap eSIM</text>
+  <text x="314" y="99" text-anchor="middle" font-size="8" fill="#4b5563">mTLS Handshake</text>
+  <line x1="369" y1="71" x2="383" y2="71" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- Phase 4: Cert Validation -->
+  <rect x="386" y="26" width="108" height="90" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <circle cx="440" cy="50" r="13" fill="#3b82f6"/>
+  <text x="440" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">4</text>
+  <text x="440" y="73" text-anchor="middle" font-size="9" font-weight="600" fill="#1d4ed8">Validation</text>
+  <text x="440" y="86" text-anchor="middle" font-size="8" fill="#4b5563">Cert Chain</text>
+  <text x="440" y="99" text-anchor="middle" font-size="8" fill="#4b5563">HSM Verification</text>
+  <line x1="495" y1="71" x2="509" y2="71" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- Phase 5: eSIM RSP -->
+  <rect x="512" y="26" width="108" height="90" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <circle cx="566" cy="50" r="13" fill="#3b82f6"/>
+  <text x="566" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">5</text>
+  <text x="566" y="73" text-anchor="middle" font-size="9" font-weight="600" fill="#1d4ed8">eSIM RSP</text>
+  <text x="566" y="86" text-anchor="middle" font-size="8" fill="#4b5563">Operational</text>
+  <text x="566" y="99" text-anchor="middle" font-size="8" fill="#4b5563">Profile Push</text>
+  <line x1="621" y1="71" x2="635" y2="71" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- Phase 6: Activation -->
+  <rect x="638" y="26" width="108" height="90" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <circle cx="692" cy="50" r="13" fill="#3b82f6"/>
+  <text x="692" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">6</text>
+  <text x="692" y="73" text-anchor="middle" font-size="9" font-weight="600" fill="#1d4ed8">Activation</text>
+  <text x="692" y="86" text-anchor="middle" font-size="8" fill="#4b5563">Config Push</text>
+  <text x="692" y="99" text-anchor="middle" font-size="8" fill="#4b5563">Data Exchange</text>
+  <line x1="747" y1="71" x2="761" y2="71" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- Phase 7: Fleet Handover (success) -->
+  <rect x="764" y="26" width="108" height="90" rx="8" fill="#dcfce7" stroke="#86efac" stroke-width="1.5"/>
+  <circle cx="818" cy="50" r="13" fill="#16a34a"/>
+  <text x="818" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">7</text>
+  <text x="818" y="73" text-anchor="middle" font-size="9" font-weight="600" fill="#15803d">Fleet Ready</text>
+  <text x="818" y="86" text-anchor="middle" font-size="8" fill="#374151">Ownership</text>
+  <text x="818" y="99" text-anchor="middle" font-size="8" fill="#374151">Transfer</text>
+
+  <!-- Impact footer -->
+  <text x="440" y="143" text-anchor="middle" font-size="9" fill="#9ca3af">10 days → 3 days onboarding · 500 vehicles · 2 fleet operators · EU &amp; US markets · UN R155 / GDPR compliant</text>
+</svg>

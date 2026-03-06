@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 172" font-family="system-ui,-apple-system,BlinkMacSystemFont,sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#3b82f6"/>
+    </marker>
+    <marker id="arrg" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#9ca3af"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="440" y="17" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1e293b" letter-spacing="0.3">Akelius Construction Lifecycle — Department Handover Platform</text>
+
+  <!-- Step 1: Source Data -->
+  <rect x="16" y="26" width="152" height="90" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <circle cx="92" cy="50" r="13" fill="#3b82f6"/>
+  <text x="92" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">1</text>
+  <text x="92" y="73" text-anchor="middle" font-size="9" font-weight="600" fill="#1d4ed8">Source Data</text>
+  <text x="92" y="86" text-anchor="middle" font-size="8" fill="#4b5563">Multi-dept construction</text>
+  <text x="92" y="99" text-anchor="middle" font-size="8" fill="#4b5563">project records</text>
+  <line x1="169" y1="71" x2="185" y2="71" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- Step 2: Manual Handover (pain point) -->
+  <rect x="190" y="26" width="152" height="90" rx="8" fill="#fff1f2" stroke="#fca5a5" stroke-width="1.5"/>
+  <circle cx="266" cy="50" r="13" fill="#ef4444"/>
+  <text x="266" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">2</text>
+  <text x="266" y="73" text-anchor="middle" font-size="9" font-weight="600" fill="#b91c1c">Manual Handover</text>
+  <text x="266" y="86" text-anchor="middle" font-size="8" fill="#4b5563">Errors, delays,</text>
+  <text x="266" y="99" text-anchor="middle" font-size="8" fill="#4b5563">siloed departments</text>
+  <line x1="343" y1="71" x2="359" y2="71" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- Step 3: Automated Platform -->
+  <rect x="364" y="26" width="152" height="90" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <circle cx="440" cy="50" r="13" fill="#3b82f6"/>
+  <text x="440" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">3</text>
+  <text x="440" y="73" text-anchor="middle" font-size="9" font-weight="600" fill="#1d4ed8">Lifecycle Platform</text>
+  <text x="440" y="86" text-anchor="middle" font-size="8" fill="#4b5563">React · GraphQL</text>
+  <text x="440" y="99" text-anchor="middle" font-size="8" fill="#4b5563">SSR · Node.js · AWS</text>
+  <line x1="517" y1="71" x2="533" y2="71" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- Step 4: Analytics Dashboard -->
+  <rect x="538" y="26" width="152" height="90" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <circle cx="614" cy="50" r="13" fill="#3b82f6"/>
+  <text x="614" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">4</text>
+  <text x="614" y="73" text-anchor="middle" font-size="9" font-weight="600" fill="#1d4ed8">Analytics Dashboard</text>
+  <text x="614" y="86" text-anchor="middle" font-size="8" fill="#4b5563">Automated reports</text>
+  <text x="614" y="99" text-anchor="middle" font-size="8" fill="#4b5563">Real-time insights</text>
+  <line x1="691" y1="71" x2="707" y2="71" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- Step 5: Investment Decision (success) -->
+  <rect x="712" y="26" width="152" height="90" rx="8" fill="#dcfce7" stroke="#86efac" stroke-width="1.5"/>
+  <circle cx="788" cy="50" r="13" fill="#16a34a"/>
+  <text x="788" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">5</text>
+  <text x="788" y="73" text-anchor="middle" font-size="9" font-weight="600" fill="#15803d">Better Decisions</text>
+  <text x="788" y="86" text-anchor="middle" font-size="8" fill="#374151">+15% accuracy</text>
+  <text x="788" y="99" text-anchor="middle" font-size="8" fill="#374151">50% faster reports</text>
+
+  <!-- Impact footer -->
+  <text x="440" y="164" text-anchor="middle" font-size="9" fill="#9ca3af">Real estate lifecycle digitalised · 15% improvement in investment decision accuracy · 50% cut in report turnaround</text>
+</svg>
