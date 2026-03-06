@@ -12,7 +12,7 @@ interface FeaturedWorkSectionProps {
 
 export default function FeaturedWorkSection({items}: FeaturedWorkSectionProps) {
   return (
-    <section id="work" className="py-24 px-4 sm:px-6 lg:px-8 bg-slate-100/50 dark:bg-slate-900/30">
+    <section id="work" className="py-24 px-4 sm:px-6 lg:px-8 bg-slate-100/50 dark:bg-slate-800/30">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
           <SectionHeading
@@ -49,8 +49,8 @@ export default function FeaturedWorkSection({items}: FeaturedWorkSectionProps) {
             <Link
               key={href}
               href={href}
-              className={`flex items-center justify-between px-5 py-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-${color}-500/40 transition-all duration-200 group`}>
-              <span className="text-sm font-medium text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-slate-100">
+              className={`flex items-center justify-between px-5 py-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl hover:border-${color}-500/40 transition-all duration-200 group`}>
+              <span className="text-sm font-medium text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white">
                 {label}
               </span>
               <ArrowRight className={`w-4 h-4 text-${color}-400 group-hover:translate-x-1 transition-transform`} />

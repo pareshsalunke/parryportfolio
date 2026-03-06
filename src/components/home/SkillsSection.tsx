@@ -49,7 +49,7 @@ export default function SkillsSection() {
           className="mb-12"
         />
 
-        <div className="divide-y divide-slate-200 dark:divide-slate-800">
+        <div className="divide-y divide-slate-200 dark:divide-slate-700">
           {skillRows.map(row => (
             <div
               key={row.num}
@@ -59,7 +59,7 @@ export default function SkillsSection() {
                 <p className={`font-mono text-[10px] tracking-widest mb-1.5 opacity-70 ${row.numColor}`}>
                   {row.num}
                 </p>
-                <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100 leading-snug">
+                <h3 className="text-base font-semibold text-slate-900 dark:text-white leading-snug">
                   {row.title}
                 </h3>
               </div>
@@ -73,7 +73,7 @@ export default function SkillsSection() {
                 {row.tags.map(tag => (
                   <span
                     key={tag}
-                    className="text-xs px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/60 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700/60">
+                    className="text-xs px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
                     {tag}
                   </span>
                 ))}

@@ -5,7 +5,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-slate-200/60 dark:border-slate-800/60 bg-white dark:bg-slate-950">
+    <footer className="border-t border-slate-200/60 dark:border-slate-700/60 bg-white dark:bg-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           {/* Logo / name */}
@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="w-7 h-7 rounded-md bg-blue-600 flex items-center justify-center text-white text-xs font-bold">
               PS
             </div>
-            <p className="text-sm text-slate-600 dark:text-slate-400">
+            <p className="text-sm text-slate-600 dark:text-slate-300">
               Paresh Salunke &mdash; Product Manager
             </p>
           </div>
