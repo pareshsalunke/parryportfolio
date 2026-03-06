@@ -24,11 +24,17 @@ export default function CaseStudiesPage() {
           subtitle="Problem → Research → Solution → Results. The full story behind key product decisions."
           className="mb-12"
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {caseStudies.map(cs => (
-            <CaseStudyCard key={cs.id} caseStudy={cs} />
-          ))}
-        </div>
+        {caseStudies.length === 0 ? (
+          <p className="text-slate-500 dark:text-slate-500 text-center py-16">
+            Case studies coming soon.
+          </p>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {caseStudies.map(cs => (
+              <CaseStudyCard key={cs.id} caseStudy={cs} />
+            ))}
+          </div>
+        )}
       </main>
       <Footer />
     </>
