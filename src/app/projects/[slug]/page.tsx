@@ -46,6 +46,21 @@ export default async function ProjectDetailPage({params}: Props) {
 
         <MetricsBadge metrics={project.metrics} />
 
+        {/* Flow Diagram */}
+        {project.flowDiagram && (
+          <div className="mb-10">
+            <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">How It Works</h2>
+            <div className="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 overflow-hidden p-4">
+              <img
+                src={project.flowDiagram}
+                alt={project.flowDiagramAlt ?? `${project.title} user flow diagram`}
+                className="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        )}
+
         {/* Outcome */}
         <div className="mb-10 p-5 bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-900/40 rounded-xl">
           <p className="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-2">

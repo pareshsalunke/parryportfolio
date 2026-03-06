@@ -34,6 +34,9 @@ export interface Project extends ContentBase {
   approach: string;
   results: string[];
   techStack?: string[];
+  flowDiagram?: string;
+  flowDiagramAlt?: string;
+  link?: string;
 }
 
 export interface CaseStudy extends ContentBase {
