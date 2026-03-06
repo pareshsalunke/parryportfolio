@@ -4,30 +4,20 @@ import GradientBadge from '@/components/ui/GradientBadge';
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden pt-24 pb-16 sm:pt-32 sm:pb-20">
       {/* Background glow */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse 80% 50% at 50% -10%, rgba(234,88,12,0.08) 0%, transparent 70%)',
-        }}
-      />
-
-      {/* Grid pattern */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-20"
-        style={{
-          backgroundImage:
-            'linear-gradient(rgba(148,163,184,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,0.05) 1px, transparent 1px)',
-          backgroundSize: '64px 64px',
+            'radial-gradient(ellipse 80% 60% at 50% -10%, rgba(234,88,12,0.1) 0%, transparent 70%)',
         }}
       />
 
       <div className="relative z-10 max-w-4xl mx-auto text-center space-y-8">
         {/* Eyebrow badge */}
         <GradientBadge>
-          <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
+          <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
           Software Engineer → Product Manager
         </GradientBadge>
 
@@ -57,19 +47,19 @@ export default function HeroSection() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 px-7 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-blue-900/30">
+            className="inline-flex items-center gap-2 px-7 py-3.5 bg-stone-900 hover:bg-stone-800 dark:bg-orange-600 dark:hover:bg-orange-500 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-stone-900/20">
             View My Work <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
             href="/case-studies"
-            className="inline-flex items-center gap-2 px-7 py-3.5 bg-transparent border border-stone-300 dark:border-slate-700 hover:border-stone-400 dark:hover:border-slate-500 text-stone-700 dark:text-slate-300 hover:text-stone-900 dark:hover:text-slate-100 font-semibold rounded-xl transition-all duration-200">
+            className="inline-flex items-center gap-2 px-7 py-3.5 bg-transparent border border-amber-300 dark:border-slate-700 hover:border-amber-400 dark:hover:border-slate-500 text-stone-700 dark:text-slate-300 hover:text-stone-900 dark:hover:text-slate-100 font-semibold rounded-xl transition-all duration-200">
             Read Case Studies
           </Link>
           <a
             href="/Resume-PareshSalunke.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3.5 bg-transparent border border-stone-300 dark:border-slate-700 hover:border-stone-400 dark:hover:border-slate-500 text-stone-700 dark:text-slate-300 hover:text-stone-900 dark:hover:text-slate-100 font-semibold rounded-xl transition-all duration-200">
+            className="inline-flex items-center gap-2 px-7 py-3.5 bg-transparent border border-amber-300 dark:border-slate-700 hover:border-amber-400 dark:hover:border-slate-500 text-stone-700 dark:text-slate-300 hover:text-stone-900 dark:hover:text-slate-100 font-semibold rounded-xl transition-all duration-200">
             <FileText className="w-4 h-4" /> Resume
           </a>
         </div>
@@ -80,7 +70,7 @@ export default function HeroSection() {
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-stone-400 dark:text-slate-500 hover:text-stone-700 dark:hover:text-slate-300 transition-colors"
+            className="text-stone-500 dark:text-slate-500 hover:text-orange-600 dark:hover:text-slate-300 transition-colors"
             aria-label="LinkedIn">
             <Linkedin className="w-5 h-5" />
           </a>
@@ -88,13 +78,13 @@ export default function HeroSection() {
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-stone-400 dark:text-slate-500 hover:text-stone-700 dark:hover:text-slate-300 transition-colors"
+            className="text-stone-500 dark:text-slate-500 hover:text-orange-600 dark:hover:text-slate-300 transition-colors"
             aria-label="GitHub">
             <Github className="w-5 h-5" />
           </a>
           <a
             href="mailto:pareshsalunke@gmail.com"
-            className="text-stone-400 dark:text-slate-500 hover:text-stone-700 dark:hover:text-slate-300 transition-colors"
+            className="text-stone-500 dark:text-slate-500 hover:text-orange-600 dark:hover:text-slate-300 transition-colors"
             aria-label="Email">
             <Mail className="w-5 h-5" />
           </a>
@@ -104,7 +94,7 @@ export default function HeroSection() {
       {/* Scroll indicator */}
       <a
         href="#about"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-stone-400 dark:text-slate-600 hover:text-stone-600 dark:hover:text-slate-400 transition-colors animate-bounce"
+        className="mt-12 text-stone-500 dark:text-slate-600 hover:text-orange-600 dark:hover:text-slate-400 transition-colors animate-bounce"
         aria-label="Scroll down">
         <ChevronDown className="w-6 h-6" />
       </a>

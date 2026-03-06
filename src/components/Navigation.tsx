@@ -25,12 +25,12 @@ export default function Navigation() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white text-sm font-bold shrink-0">
+          <div className="w-8 h-8 rounded-lg bg-stone-900 dark:bg-orange-600 flex items-center justify-center text-white text-sm font-bold shrink-0">
             PS
           </div>
           <div className="hidden sm:block">
             <p className="text-sm font-semibold text-stone-900 dark:text-slate-100 leading-tight">Paresh Salunke</p>
-            <p className="text-xs text-stone-500 leading-tight">Product Manager</p>
+            <p className="text-xs text-stone-600 leading-tight">Product Manager</p>
           </div>
         </Link>
 
@@ -48,7 +48,7 @@ export default function Navigation() {
                 className={cn(
                   'px-3 py-2 rounded-lg text-sm font-medium transition-colors',
                   isActive
-                    ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/40'
+                    ? 'text-orange-700 dark:text-orange-400 bg-orange-50 dark:bg-orange-950/20'
                     : 'text-stone-600 dark:text-slate-300 hover:text-stone-900 dark:hover:text-white hover:bg-amber-100 dark:hover:bg-slate-800/60',
                 )}>
                 {link.label}

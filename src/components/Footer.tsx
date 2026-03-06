@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           {/* Logo / name */}
           <div className="flex items-center gap-3">
-            <div className="w-7 h-7 rounded-md bg-blue-600 flex items-center justify-center text-white text-xs font-bold">
+            <div className="w-7 h-7 rounded-md bg-stone-900 dark:bg-orange-600 flex items-center justify-center text-white text-xs font-bold">
               PS
             </div>
             <p className="text-sm text-stone-600 dark:text-slate-300">
@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
 
           {/* Nav links */}
-          <div className="flex items-center gap-4 text-xs text-stone-500">
+          <div className="flex items-center gap-4 text-xs text-stone-600">
             <Link href="/projects" className="hover:text-stone-700 dark:hover:text-slate-300 transition-colors">
               Projects
             </Link>
@@ -37,7 +37,7 @@ export default function Footer() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-stone-400 dark:text-slate-600 hover:text-stone-700 dark:hover:text-slate-400 transition-colors"
+              className="text-stone-500 dark:text-slate-600 hover:text-stone-700 dark:hover:text-slate-400 transition-colors"
               aria-label="LinkedIn">
               <Linkedin className="w-4 h-4" />
             </a>
@@ -45,21 +45,21 @@ export default function Footer() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-stone-400 dark:text-slate-600 hover:text-stone-700 dark:hover:text-slate-400 transition-colors"
+              className="text-stone-500 dark:text-slate-600 hover:text-stone-700 dark:hover:text-slate-400 transition-colors"
               aria-label="GitHub">
               <Github className="w-4 h-4" />
             </a>
             <a
               href="mailto:pareshsalunke@gmail.com"
-              className="text-stone-400 dark:text-slate-600 hover:text-stone-700 dark:hover:text-slate-400 transition-colors"
+              className="text-stone-500 dark:text-slate-600 hover:text-stone-700 dark:hover:text-slate-400 transition-colors"
               aria-label="Email">
               <Mail className="w-4 h-4" />
             </a>
           </div>
         </div>
 
-        <p className="mt-8 text-center text-xs text-stone-400 dark:text-slate-700">
-          &copy; {year} Paresh Salunke. All rights reserved.
+        <p className="mt-8 text-center text-xs text-stone-500 dark:text-slate-700">
+          © {year} Paresh Salunke. All rights reserved.
         </p>
       </div>
     </footer>

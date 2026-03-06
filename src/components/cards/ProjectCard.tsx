@@ -13,18 +13,18 @@ export default function ProjectCard({project}: ProjectCardProps) {
         {/* Header */}
         <div className="flex items-start justify-between gap-3 mb-4">
           <div>
-            <span className="text-xs font-semibold text-blue-400 uppercase tracking-widest">
+            <span className="text-xs font-semibold text-orange-800 uppercase tracking-widest">
               Project
             </span>
-            <p className="text-xs text-stone-500 mt-0.5">{project.company}</p>
+            <p className="text-xs text-stone-600 mt-0.5">{project.company}</p>
           </div>
         </div>
 
         {/* Title */}
-        <h3 className="text-lg font-bold text-stone-900 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-blue-300 transition-colors leading-snug">
+        <h3 className="text-lg font-bold text-stone-900 dark:text-slate-100 group-hover:text-orange-700 dark:group-hover:text-orange-300 transition-colors leading-snug">
           {project.title}
         </h3>
-        <p className="text-sm text-stone-500 dark:text-slate-400 mt-1 mb-4">{project.subtitle}</p>
+        <p className="text-sm text-stone-600 dark:text-slate-400 mt-1 mb-4">{project.subtitle}</p>
 
         {/* Outcome */}
         <p className="text-sm text-stone-600 dark:text-slate-200 leading-relaxed flex-1">{project.outcome}</p>
@@ -34,8 +34,8 @@ export default function ProjectCard({project}: ProjectCardProps) {
           <div className="flex gap-3 mt-4 flex-wrap">
             {project.metrics.slice(0, 2).map((m, i) => (
               <div key={i} className="bg-amber-50 dark:bg-slate-700 border border-amber-100 dark:border-slate-600 rounded-lg px-3 py-2">
-                <p className="text-sm font-bold text-blue-600 dark:text-blue-400">{m.value}</p>
-                <p className="text-xs text-stone-500 dark:text-slate-400">{m.label}</p>
+                <p className="text-sm font-bold text-orange-700 dark:text-orange-400">{m.value}</p>
+                <p className="text-xs text-stone-600 dark:text-slate-400">{m.label}</p>
               </div>
             ))}
           </div>
@@ -46,14 +46,14 @@ export default function ProjectCard({project}: ProjectCardProps) {
           {project.tags.slice(0, 3).map(tag => (
             <span
               key={tag}
-              className="text-xs px-2 py-0.5 bg-amber-50 dark:bg-slate-700 text-stone-500 dark:text-slate-300 rounded-full border border-amber-100 dark:border-slate-600">
+              className="text-xs px-2 py-0.5 bg-amber-50 dark:bg-slate-700 text-stone-600 dark:text-slate-300 rounded-full border border-amber-100 dark:border-slate-600">
               {tag}
             </span>
           ))}
         </div>
 
         {/* CTA */}
-        <div className="flex items-center gap-1 mt-4 text-sm text-blue-400 font-medium group-hover:gap-2 transition-all">
+        <div className="flex items-center gap-1 mt-4 text-sm text-orange-700 font-medium group-hover:gap-2 transition-all">
           Read more <ArrowRight className="w-4 h-4" />
         </div>
       </div>

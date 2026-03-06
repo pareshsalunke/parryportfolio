@@ -22,7 +22,7 @@ export default function FeaturedWorkSection({items}: FeaturedWorkSectionProps) {
           />
           <Link
             href="/projects"
-            className="inline-flex items-center gap-1.5 text-sm text-blue-400 hover:text-blue-300 font-medium shrink-0 transition-colors">
+            className="inline-flex items-center gap-1.5 text-sm text-orange-600 hover:text-orange-500 font-medium shrink-0 transition-colors">
             View all work <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -42,18 +42,18 @@ export default function FeaturedWorkSection({items}: FeaturedWorkSectionProps) {
         {/* Browse by type */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-12">
           {[
-            {label: 'All Projects', href: '/projects', color: 'blue'},
-            {label: 'All Case Studies', href: '/case-studies', color: 'violet'},
-            {label: 'All Prototypes', href: '/prototypes', color: 'emerald'},
-          ].map(({label, href, color}) => (
+            {label: 'All Projects', href: '/projects'},
+            {label: 'All Case Studies', href: '/case-studies'},
+            {label: 'All Prototypes', href: '/prototypes'},
+          ].map(({label, href}) => (
             <Link
               key={href}
               href={href}
-              className={`flex items-center justify-between px-5 py-4 bg-white dark:bg-slate-800 border border-amber-100 dark:border-slate-700 rounded-xl hover:border-${color}-500/40 transition-all duration-200 group`}>
+              className="flex items-center justify-between px-5 py-4 bg-white dark:bg-slate-800 border border-amber-100 dark:border-slate-700 rounded-xl hover:border-orange-400/50 hover:bg-amber-50 dark:hover:bg-slate-700/60 transition-all duration-200 group">
               <span className="text-sm font-medium text-stone-700 dark:text-slate-300 group-hover:text-stone-900 dark:group-hover:text-white">
                 {label}
               </span>
-              <ArrowRight className={`w-4 h-4 text-${color}-400 group-hover:translate-x-1 transition-transform`} />
+              <ArrowRight className="w-4 h-4 text-orange-500 group-hover:translate-x-1 transition-transform" />
             </Link>
           ))}
         </div>
