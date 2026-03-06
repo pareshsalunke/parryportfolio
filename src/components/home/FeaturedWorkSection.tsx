@@ -49,7 +49,7 @@ export default function FeaturedWorkSection({items}: FeaturedWorkSectionProps) {
             <Link
               key={href}
               href={href}
-              className="flex items-center justify-between px-5 py-4 bg-white dark:bg-slate-800 border border-amber-100 dark:border-slate-700 rounded-xl hover:border-orange-400/50 hover:bg-amber-50 dark:hover:bg-slate-700/60 transition-all duration-200 group">
+              className="flex items-center justify-between px-5 py-4 bg-amber-50 dark:bg-slate-800 border border-amber-200 dark:border-slate-700 rounded-xl hover:border-orange-400/50 hover:bg-amber-100/60 dark:hover:bg-slate-700/60 transition-all duration-200 group">
               <span className="text-sm font-medium text-stone-700 dark:text-slate-300 group-hover:text-stone-900 dark:group-hover:text-white">
                 {label}
               </span>

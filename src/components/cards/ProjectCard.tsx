@@ -9,7 +9,7 @@ interface ProjectCardProps {
 export default function ProjectCard({project}: ProjectCardProps) {
   return (
     <Link href={`/projects/${project.slug}`} className="block group">
-      <div className="h-full bg-white dark:bg-slate-800 border border-amber-100 dark:border-slate-700 rounded-2xl p-6 hover:border-orange-400/40 hover:bg-amber-50 dark:hover:bg-slate-700/60 transition-all duration-300 flex flex-col">
+      <div className="h-full bg-amber-50 dark:bg-slate-800 border border-amber-200 dark:border-slate-700 rounded-2xl p-6 hover:border-orange-400/40 hover:bg-amber-100/60 dark:hover:bg-slate-700/60 transition-all duration-300 flex flex-col">
         {/* Header */}
         <div className="flex items-start justify-between gap-3 mb-4">
           <div>

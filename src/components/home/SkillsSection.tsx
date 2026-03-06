@@ -54,7 +54,7 @@ export default function SkillsSection() {
                 {row.tags.map(tag => (
                   <span
                     key={tag}
-                    className="text-xs px-3 py-1.5 rounded-lg bg-white dark:bg-slate-800 text-stone-600 dark:text-slate-300 border border-amber-100 dark:border-slate-700">
+                    className="text-xs px-3 py-1.5 rounded-lg bg-amber-100/60 dark:bg-slate-800 text-stone-700 dark:text-slate-300 border border-amber-200 dark:border-slate-700">
                     {tag}
                   </span>
                 ))}
