@@ -10,7 +10,7 @@ export default function HeroSection() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse 80% 50% at 50% -10%, rgba(59,130,246,0.15) 0%, transparent 70%)',
+            'radial-gradient(ellipse 80% 50% at 50% -10%, rgba(234,88,12,0.08) 0%, transparent 70%)',
         }}
       />
 
@@ -32,7 +32,7 @@ export default function HeroSection() {
         </GradientBadge>
 
         {/* Headline */}
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-slate-900 dark:text-slate-100 leading-tight">
+        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-stone-900 dark:text-slate-100 leading-tight">
           Building products at the{' '}
           <span
             style={{
@@ -47,9 +47,9 @@ export default function HeroSection() {
         </h1>
 
         {/* Subheadline */}
-        <p className="text-xl sm:text-2xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl sm:text-2xl text-stone-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
           I&apos;m{' '}
-          <span className="text-slate-800 dark:text-slate-200 font-semibold">Paresh Salunke</span> — a Senior Product
+          <span className="text-stone-800 dark:text-slate-200 font-semibold">Paresh Salunke</span> — a Senior Product
           Manager who writes code. I turn complex technical problems into products people love.
         </p>
 
@@ -62,14 +62,14 @@ export default function HeroSection() {
           </Link>
           <Link
             href="/case-studies"
-            className="inline-flex items-center gap-2 px-7 py-3.5 bg-transparent border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-semibold rounded-xl transition-all duration-200">
+            className="inline-flex items-center gap-2 px-7 py-3.5 bg-transparent border border-stone-300 dark:border-slate-700 hover:border-stone-400 dark:hover:border-slate-500 text-stone-700 dark:text-slate-300 hover:text-stone-900 dark:hover:text-slate-100 font-semibold rounded-xl transition-all duration-200">
             Read Case Studies
           </Link>
           <a
             href="/Resume-PareshSalunke.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3.5 bg-transparent border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-semibold rounded-xl transition-all duration-200">
+            className="inline-flex items-center gap-2 px-7 py-3.5 bg-transparent border border-stone-300 dark:border-slate-700 hover:border-stone-400 dark:hover:border-slate-500 text-stone-700 dark:text-slate-300 hover:text-stone-900 dark:hover:text-slate-100 font-semibold rounded-xl transition-all duration-200">
             <FileText className="w-4 h-4" /> Resume
           </a>
         </div>
@@ -80,7 +80,7 @@ export default function HeroSection() {
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 transition-colors"
+            className="text-stone-400 dark:text-slate-500 hover:text-stone-700 dark:hover:text-slate-300 transition-colors"
             aria-label="LinkedIn">
             <Linkedin className="w-5 h-5" />
           </a>
@@ -88,13 +88,13 @@ export default function HeroSection() {
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 transition-colors"
+            className="text-stone-400 dark:text-slate-500 hover:text-stone-700 dark:hover:text-slate-300 transition-colors"
             aria-label="GitHub">
             <Github className="w-5 h-5" />
           </a>
           <a
             href="mailto:pareshsalunke@gmail.com"
-            className="text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 transition-colors"
+            className="text-stone-400 dark:text-slate-500 hover:text-stone-700 dark:hover:text-slate-300 transition-colors"
             aria-label="Email">
             <Mail className="w-5 h-5" />
           </a>
@@ -104,7 +104,7 @@ export default function HeroSection() {
       {/* Scroll indicator */}
       <a
         href="#about"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-slate-400 dark:text-slate-600 hover:text-slate-600 dark:hover:text-slate-400 transition-colors animate-bounce"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-stone-400 dark:text-slate-600 hover:text-stone-600 dark:hover:text-slate-400 transition-colors animate-bounce"
         aria-label="Scroll down">
         <ChevronDown className="w-6 h-6" />
       </a>
