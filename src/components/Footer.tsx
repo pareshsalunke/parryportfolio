@@ -50,7 +50,7 @@ export default function Footer() {
               <Github className="w-4 h-4" />
             </a>
             <a
-              href="mailto:paresh@example.com"
+              href="mailto:pareshsalunke@gmail.com"
               className="text-slate-400 dark:text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 transition-colors"
               aria-label="Email">
               <Mail className="w-4 h-4" />
