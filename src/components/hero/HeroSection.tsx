@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import {ArrowRight, Github, Linkedin, Mail, ChevronDown} from 'lucide-react';
+import {ArrowRight, Download, Github, Linkedin, Mail, ChevronDown} from 'lucide-react';
 import GradientBadge from '@/components/ui/GradientBadge';
 
 export default function HeroSection() {
@@ -65,6 +65,12 @@ export default function HeroSection() {
             className="inline-flex items-center gap-2 px-7 py-3.5 bg-transparent border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-semibold rounded-xl transition-all duration-200">
             Read Case Studies
           </Link>
+          <a
+            href="/Resume-PareshSalunke.pdf"
+            download
+            className="inline-flex items-center gap-2 px-7 py-3.5 bg-transparent border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 font-semibold rounded-xl transition-all duration-200">
+            <Download className="w-4 h-4" /> Resume
+          </a>
         </div>
 
         {/* Social links */}
