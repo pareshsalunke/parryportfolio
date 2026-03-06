@@ -16,9 +16,9 @@ interface DetailHeroProps {
 }
 
 const typeColors = {
-  project: 'text-blue-400',
-  'case-study': 'text-violet-400',
-  prototype: 'text-emerald-400',
+  project: 'text-orange-800',
+  'case-study': 'text-orange-800',
+  prototype: 'text-orange-800',
 };
 
 const typeLabels = {
@@ -42,16 +42,16 @@ export default function DetailHero({
   return (
     <div className="mb-12">
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-sm text-slate-500 mb-8">
-        <Link href="/" className="hover:text-slate-700 dark:hover:text-slate-300 transition-colors">
+      <nav className="flex items-center gap-2 text-sm text-stone-600 mb-8">
+        <Link href="/" className="hover:text-stone-900 dark:hover:text-slate-300 transition-colors">
           Home
         </Link>
         <span>/</span>
-        <Link href={listingHref} className="hover:text-slate-700 dark:hover:text-slate-300 transition-colors">
+        <Link href={listingHref} className="hover:text-stone-900 dark:hover:text-slate-300 transition-colors">
           {listingLabel}
         </Link>
         <span>/</span>
-        <span className="text-slate-500 dark:text-slate-400 truncate">{title}</span>
+        <span className="text-stone-500 dark:text-slate-400 truncate">{title}</span>
       </nav>
 
       {/* Type + date */}
@@ -59,33 +59,33 @@ export default function DetailHero({
         <span className={`text-sm font-semibold uppercase tracking-widest ${typeColors[type]}`}>
           {typeLabels[type]}
         </span>
-        <span className="text-slate-600">·</span>
-        <span className="text-sm text-slate-500">{formatDate(date)}</span>
+        <span className="text-stone-500">·</span>
+        <span className="text-sm text-stone-600">{formatDate(date)}</span>
       </div>
 
       {/* Title */}
-      <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-slate-100 leading-tight">{title}</h1>
-      <p className="mt-4 text-xl text-slate-600 dark:text-slate-400">{subtitle}</p>
+      <h1 className="text-4xl sm:text-5xl font-bold text-stone-900 dark:text-slate-100 leading-tight">{title}</h1>
+      <p className="mt-4 text-xl text-stone-600 dark:text-slate-400">{subtitle}</p>
 
       {/* Meta row */}
       {(company || role || duration) && (
-        <div className="flex flex-wrap gap-x-6 gap-y-2 mt-6 text-sm text-slate-500 dark:text-slate-400">
+        <div className="flex flex-wrap gap-x-6 gap-y-2 mt-6 text-sm text-stone-600 dark:text-slate-400">
           {company && (
             <span>
-              <span className="text-slate-400 dark:text-slate-600">Company</span>{' '}
-              <span className="text-slate-700 dark:text-slate-300 font-medium">{company}</span>
+              <span className="text-stone-500 dark:text-slate-600">Company</span>{' '}
+              <span className="text-stone-800 dark:text-slate-300 font-medium">{company}</span>
             </span>
           )}
           {role && (
             <span>
-              <span className="text-slate-400 dark:text-slate-600">Role</span>{' '}
-              <span className="text-slate-700 dark:text-slate-300 font-medium">{role}</span>
+              <span className="text-stone-500 dark:text-slate-600">Role</span>{' '}
+              <span className="text-stone-800 dark:text-slate-300 font-medium">{role}</span>
             </span>
           )}
           {duration && (
             <span>
-              <span className="text-slate-400 dark:text-slate-600">Duration</span>{' '}
-              <span className="text-slate-700 dark:text-slate-300 font-medium">{duration}</span>
+              <span className="text-stone-500 dark:text-slate-600">Duration</span>{' '}
+              <span className="text-stone-800 dark:text-slate-300 font-medium">{duration}</span>
             </span>
           )}
         </div>
@@ -100,7 +100,7 @@ export default function DetailHero({
         </div>
       )}
 
-      <div className="mt-10 border-t border-slate-200 dark:border-slate-800" />
+      <div className="mt-10 border-t border-amber-200 dark:border-slate-700" />
     </div>
   );
 }

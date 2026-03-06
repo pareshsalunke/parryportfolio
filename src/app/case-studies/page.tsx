@@ -25,7 +25,7 @@ export default function CaseStudiesPage() {
           className="mb-12"
         />
         {caseStudies.length === 0 ? (
-          <p className="text-slate-500 dark:text-slate-500 text-center py-16">
+          <p className="text-stone-600 dark:text-slate-400 text-center py-16">
             Case studies coming soon.
           </p>
         ) : (

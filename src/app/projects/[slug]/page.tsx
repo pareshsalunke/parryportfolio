@@ -49,8 +49,8 @@ export default async function ProjectDetailPage({params}: Props) {
         {/* Flow Diagram */}
         {project.flowDiagram && (
           <div className="mb-10">
-            <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">How It Works</h2>
-            <div className="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 overflow-hidden p-4">
+            <h2 className="text-xl font-bold text-stone-900 dark:text-slate-100 mb-4">How It Works</h2>
+            <div className="rounded-xl border border-amber-200 dark:border-slate-700 bg-amber-50 dark:bg-slate-900 overflow-hidden p-4">
               <img
                 src={project.flowDiagram}
                 alt={project.flowDiagramAlt ?? `${project.title} user flow diagram`}
@@ -62,11 +62,11 @@ export default async function ProjectDetailPage({params}: Props) {
         )}
 
         {/* Outcome */}
-        <div className="mb-10 p-5 bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-900/40 rounded-xl">
-          <p className="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-2">
+        <div className="mb-10 p-5 bg-amber-100 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/30 rounded-xl">
+          <p className="text-sm font-semibold text-orange-800 dark:text-orange-400 uppercase tracking-widest mb-2">
             Outcome
           </p>
-          <p className="text-slate-800 dark:text-slate-200 text-lg leading-relaxed">{project.outcome}</p>
+          <p className="text-stone-800 dark:text-slate-200 text-lg leading-relaxed">{project.outcome}</p>
         </div>
 
         {/* Content sections */}
@@ -76,8 +76,8 @@ export default async function ProjectDetailPage({params}: Props) {
         ].map(({heading, body}) =>
           body ? (
             <section key={heading} className="mb-10">
-              <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">{heading}</h2>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">{body}</p>
+              <h2 className="text-xl font-bold text-stone-900 dark:text-slate-100 mb-4">{heading}</h2>
+              <p className="text-stone-600 dark:text-slate-400 leading-relaxed">{body}</p>
             </section>
           ) : null,
         )}
@@ -85,11 +85,11 @@ export default async function ProjectDetailPage({params}: Props) {
         {/* Results */}
         {project.results.length > 0 && (
           <section className="mb-10">
-            <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">Results</h2>
+            <h2 className="text-xl font-bold text-stone-900 dark:text-slate-100 mb-4">Results</h2>
             <ul className="space-y-2">
               {project.results.map((r, i) => (
-                <li key={i} className="flex items-start gap-3 text-slate-600 dark:text-slate-400">
-                  <span className="text-blue-500 dark:text-blue-400 mt-0.5 shrink-0">→</span>
+                <li key={i} className="flex items-start gap-3 text-stone-600 dark:text-slate-400">
+                  <span className="text-orange-600 dark:text-orange-400 mt-0.5 shrink-0">→</span>
                   {r}
                 </li>
               ))}
@@ -100,12 +100,12 @@ export default async function ProjectDetailPage({params}: Props) {
         {/* Tech stack */}
         {project.techStack && project.techStack.length > 0 && (
           <section className="mb-10">
-            <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">Tech Stack</h2>
+            <h2 className="text-xl font-bold text-stone-900 dark:text-slate-100 mb-4">Tech Stack</h2>
             <div className="flex flex-wrap gap-2">
               {project.techStack.map(tech => (
                 <span
                   key={tech}
-                  className="text-sm px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-lg border border-slate-200 dark:border-slate-700">
+                  className="text-sm px-3 py-1 bg-amber-100 dark:bg-slate-800 text-stone-700 dark:text-slate-300 rounded-lg border border-amber-200 dark:border-slate-700">
                   {tech}
                 </span>
               ))}
