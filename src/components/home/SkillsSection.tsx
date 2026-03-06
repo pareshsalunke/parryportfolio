@@ -33,7 +33,7 @@ export default function SkillsSection() {
   return (
     <section id="skills" className="py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
-        <div className="divide-y divide-stone-200 dark:divide-slate-700">
+        <div className="divide-y divide-amber-100 dark:divide-slate-700">
           {skillRows.map(row => (
             <div
               key={row.title}
@@ -54,7 +54,7 @@ export default function SkillsSection() {
                 {row.tags.map(tag => (
                   <span
                     key={tag}
-                    className="text-xs px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-slate-800 text-stone-600 dark:text-slate-300 border border-stone-200 dark:border-slate-700">
+                    className="text-xs px-3 py-1.5 rounded-lg bg-white dark:bg-slate-800 text-stone-600 dark:text-slate-300 border border-amber-100 dark:border-slate-700">
                     {tag}
                   </span>
                 ))}

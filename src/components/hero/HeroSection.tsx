@@ -36,7 +36,7 @@ export default function HeroSection() {
           Building products at the{' '}
           <span
             style={{
-              backgroundImage: 'linear-gradient(to right, #60a5fa, #a78bfa)',
+              backgroundImage: 'linear-gradient(to right, #ea580c, #d97706)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',

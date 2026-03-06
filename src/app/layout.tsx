@@ -25,7 +25,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
           }}
         />
       </head>
-      <body className="bg-stone-100 text-stone-900 dark:bg-slate-900 dark:text-white antialiased">
+      <body className="bg-amber-50 text-stone-900 dark:bg-slate-900 dark:text-white antialiased">
         <ThemeProvider>{children}</ThemeProvider>
         <Analytics />
       </body>

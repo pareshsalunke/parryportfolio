@@ -38,7 +38,7 @@ export default function AboutSection() {
             ].map(stat => (
               <div
                 key={stat.label}
-                className="bg-stone-50 dark:bg-slate-800 border border-stone-200 dark:border-slate-700 rounded-xl p-4 text-center">
+                className="bg-white dark:bg-slate-800 border border-amber-100 dark:border-slate-700 rounded-xl p-4 text-center">
                 <p className="text-2xl font-bold text-stone-900 dark:text-white">{stat.value}</p>
                 <p className="text-xs text-stone-500 dark:text-slate-400 mt-1">{stat.label}</p>
               </div>
