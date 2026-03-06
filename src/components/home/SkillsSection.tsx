@@ -82,9 +82,6 @@ export default function SkillsSection() {
           ))}
         </div>
 
-        <p className="mt-8 text-xs text-slate-400 dark:text-slate-600 italic">
-          7+ years as a software engineer before becoming a PM — technical depth is not a footnote.
-        </p>
       </div>
     </section>
   );
