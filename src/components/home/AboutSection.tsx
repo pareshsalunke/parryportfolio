@@ -15,7 +15,7 @@ export default function AboutSection() {
           </p>
           <p>
             I started as a software engineer because I wanted to build things. After 10+ years
-            doing exactly that — APIs, analytics platforms, mobile apps — I made the jump to
+            doing exactly that — APIs, analytics platforms, customer facing websites — I made the jump to
             product management. Not because I stopped wanting to build, but because I wanted to
             shape{' '}
             <span className="text-stone-800 dark:text-slate-100 font-medium">what</span> gets
