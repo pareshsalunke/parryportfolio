@@ -11,12 +11,12 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return mockProjects.map(p => ({slug: p.slug}));
+  return mockProjects.map((p) => ({slug: p.slug}));
 }
 
 export async function generateMetadata({params}: Props): Promise<Metadata> {
   const {slug} = await params;
-  const project = mockProjects.find(p => p.slug === slug);
+  const project = mockProjects.find((p) => p.slug === slug);
   return {
     title: project ? `${project.title} — Paresh Salunke` : 'Not Found',
   };
@@ -24,7 +24,7 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
 
 export default async function ProjectDetailPage({params}: Props) {
   const {slug} = await params;
-  const project = mockProjects.find(p => p.slug === slug);
+  const project = mockProjects.find((p) => p.slug === slug);
   if (!project) notFound();
 
   return (
@@ -49,11 +49,15 @@ export default async function ProjectDetailPage({params}: Props) {
         {/* Flow Diagram */}
         {project.flowDiagram && (
           <div className="mb-10">
-            <h2 className="text-xl font-bold text-stone-900 dark:text-slate-100 mb-4">How It Works</h2>
+            <h2 className="text-xl font-bold text-stone-900 dark:text-slate-100 mb-4">
+              How It Works
+            </h2>
             <div className="rounded-xl border border-amber-200 dark:border-slate-700 bg-amber-50 dark:bg-slate-900 overflow-hidden p-4">
               <img
                 src={project.flowDiagram}
-                alt={project.flowDiagramAlt ?? `${project.title} user flow diagram`}
+                alt={
+                  project.flowDiagramAlt ?? `${project.title} user flow diagram`
+                }
                 className="w-full h-auto"
                 loading="lazy"
               />
@@ -66,7 +70,9 @@ export default async function ProjectDetailPage({params}: Props) {
           <p className="text-sm font-semibold text-orange-800 dark:text-orange-400 uppercase tracking-widest mb-2">
             Outcome
           </p>
-          <p className="text-stone-800 dark:text-slate-200 text-lg leading-relaxed">{project.outcome}</p>
+          <p className="text-stone-800 dark:text-slate-200 text-lg leading-relaxed">
+            {project.outcome}
+          </p>
         </div>
 
         {/* Content sections */}
@@ -76,8 +82,12 @@ export default async function ProjectDetailPage({params}: Props) {
         ].map(({heading, body}) =>
           body ? (
             <section key={heading} className="mb-10">
-              <h2 className="text-xl font-bold text-stone-900 dark:text-slate-100 mb-4">{heading}</h2>
-              <p className="text-stone-600 dark:text-slate-400 leading-relaxed">{body}</p>
+              <h2 className="text-xl font-bold text-stone-900 dark:text-slate-100 mb-4">
+                {heading}
+              </h2>
+              <p className="text-stone-600 dark:text-slate-400 leading-relaxed">
+                {body}
+              </p>
             </section>
           ) : null,
         )}
@@ -85,11 +95,17 @@ export default async function ProjectDetailPage({params}: Props) {
         {/* Results */}
         {project.results.length > 0 && (
           <section className="mb-10">
-            <h2 className="text-xl font-bold text-stone-900 dark:text-slate-100 mb-4">Results</h2>
+            <h2 className="text-xl font-bold text-stone-900 dark:text-slate-100 mb-4">
+              Results
+            </h2>
             <ul className="space-y-2">
               {project.results.map((r, i) => (
-                <li key={i} className="flex items-start gap-3 text-stone-600 dark:text-slate-400">
-                  <span className="text-orange-600 dark:text-orange-400 mt-0.5 shrink-0">→</span>
+                <li
+                  key={i}
+                  className="flex items-start gap-3 text-stone-600 dark:text-slate-400">
+                  <span className="text-orange-600 dark:text-orange-400 mt-0.5 shrink-0">
+                    →
+                  </span>
                   {r}
                 </li>
               ))}
@@ -98,7 +114,7 @@ export default async function ProjectDetailPage({params}: Props) {
         )}
 
         {/* Tech stack */}
-        {project.techStack && project.techStack.length > 0 && (
+        {/* {project.techStack && project.techStack.length > 0 && (
           <section className="mb-10">
             <h2 className="text-xl font-bold text-stone-900 dark:text-slate-100 mb-4">Tech Stack</h2>
             <div className="flex flex-wrap gap-2">
@@ -111,7 +127,7 @@ export default async function ProjectDetailPage({params}: Props) {
               ))}
             </div>
           </section>
-        )}
+        )} */}
       </main>
       <Footer />
     </>
