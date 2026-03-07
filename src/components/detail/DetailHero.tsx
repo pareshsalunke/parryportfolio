@@ -80,8 +80,8 @@ export default function DetailHero({
       {/* Tags */}
       {tags.length > 0 && (
         <div className="flex flex-wrap gap-2 mt-6">
-          {tags.map((tag) => (
-            <TagBadge key={tag} tag={tag} />
+          {tags.map((tag, index) => (
+            <TagBadge key={`${tag}-${index}`} tag={tag} />
           ))}
         </div>
       )}

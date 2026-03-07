@@ -17,8 +17,6 @@ export const mockProjects: Project[] = [
       'API',
       'RBAC',
       'eSIM',
-      'Vehicle-to-Cloud',
-      'B2B',
     ],
     date: '',
     featured: true,
