@@ -120,7 +120,7 @@ export const mockProjects: Project[] = [
     title: 'Akelius Construction Lifecycle Platform',
     subtitle: 'Automated department handovers for real estate construction projects',
     summary:
-      'Spearheaded the development of a construction lifecycle platform at Akelius Residential Property AB, enabling seamless handovers between departments and automated investment analytics dashboards — yielding a 15% improvement in decision-making accuracy and cutting report turnaround time by 50%.',
+      'Spearheaded the development of a construction lifecycle platform at Akelius Residential Property AB, enabling seamless handovers between departments and automated investment analytics dashboards — yielding a 15% improvement in decision-making accuracy and cutting report turnaround time by 53%.',
     tags: ['Platform', 'Real Estate', 'Analytics', 'React', 'GraphQL', 'AWS', 'Full-Stack'],
     date: '2019-08-01',
     featured: true,
@@ -129,10 +129,10 @@ export const mockProjects: Project[] = [
     role: 'Software Engineer',
     duration: 'Aug 2019 – Dec 2020',
     outcome:
-      'Construction lifecycle platform enabled seamless department handovers, improving investment decision accuracy by 15% and cutting report turnaround time by 50% through automated analytics dashboards.',
+      'Construction lifecycle platform enabled seamless department handovers, improving investment decision accuracy by 15% and cutting report turnaround time by 53% through automated analytics dashboards.',
     metrics: [
       {label: 'Decision Accuracy', value: '+15%', context: 'investment decision making'},
-      {label: 'Report Turnaround', value: '↓ 50%', context: 'automated vs manual'},
+      {label: 'Report Turnaround', value: '↓ 53%', context: 'automated vs manual'},
       {label: 'Handovers', value: 'Automated', context: 'across all departments'},
     ],
     challenge:
@@ -141,7 +141,7 @@ export const mockProjects: Project[] = [
       'Developed and delivered the Akelius construction lifecycle project using React, TypeScript, GraphQL, Server-Side Rendering (SSR), Node.js, and AWS, with a focus on frontend development. Drove cross-team efficiency by establishing and maintaining a React component and utilities library aligned with the organisation\'s Design System principles. Launched automated investment analytics dashboards that replaced manual reporting workflows. Served as the primary bridge between business stakeholders and engineering execution — validating technical feasibility against user needs and working closely with Product Owners and Business Owners to finalise roadmaps.',
     results: [
       'Investment decision-making accuracy improved by 15% through high-fidelity analytics dashboards',
-      'Report turnaround time cut by 50% via automated data workflows and reporting tools',
+      'Report turnaround time cut by 53% via automated data workflows and reporting tools',
       'Seamless department handovers enabled across the full construction lifecycle',
       'Reusable React component library established, ensuring UI/UX consistency across projects',
       'Cross-team coordination improved by serving as bridge between business stakeholders and engineering',
@@ -157,7 +157,7 @@ export const mockProjects: Project[] = [
     title: 'WeWork Site Selection Analytics Tool',
     subtitle: 'Data-driven real estate expansion decisions at global scale',
     summary:
-      'Built an internal end-to-end data-driven analytics application for WeWork\'s real estate investment teams that integrated location and market data — improving site selection decision accuracy by 60% and driving a 12% increase in platform engagement by simplifying complex data workflows for non-technical users.',
+      'Built an internal end-to-end data-driven analytics application for WeWork\'s real estate investment teams that integrated location and market data — improving site selection decision accuracy by 60% and driving a 23% increase in platform engagement by simplifying complex data workflows for non-technical users.',
     tags: ['Analytics', 'Real Estate', 'Data Visualisation', 'React', 'Redux', 'TypeScript', 'Internal Tools'],
     date: '2018-02-01',
     featured: true,
@@ -166,10 +166,10 @@ export const mockProjects: Project[] = [
     role: 'Software Engineer III',
     duration: 'Feb 2018 – Jul 2019',
     outcome:
-      'Site selection decision accuracy improved by 60% and platform engagement increased by 12% through intuitive self-serve analytics tools that simplified complex data workflows for non-technical investment teams.',
+      'Site selection decision accuracy improved by 60% and platform engagement increased by 23% through intuitive self-serve analytics tools that simplified complex data workflows for non-technical investment teams.',
     metrics: [
       {label: 'Decision Accuracy', value: '+60%', context: 'site selection decisions'},
-      {label: 'Platform Engagement', value: '+12%', context: 'self-serve analytics'},
+      {label: 'Platform Engagement', value: '+23%', context: 'self-serve analytics'},
       {label: 'Users', value: 'Non-technical', context: 'investment + ops teams'},
     ],
     challenge:
@@ -178,7 +178,7 @@ export const mockProjects: Project[] = [
       'Built an internal end-to-end application for real estate investment teams in close collaboration with data scientists and product stakeholders. Integrated location and market data into a unified analytics interface with high-fidelity data visualisations. Designed the tool specifically for non-technical users — real estate analysts and operations managers — simplifying complex geospatial and market data into actionable insights. Built and maintained a reusable front-end component library and managed complex application state with Redux-Saga and TypeScript. Operated within a distributed agile team across New York and Berlin, coordinating with product managers and data analysts.',
     results: [
       'Site selection decision accuracy improved by 60% through high-fidelity data visualisation tools',
-      'Platform engagement increased by 12% by designing intuitive, self-serve analytics for non-technical users',
+      'Platform engagement increased by 23% by designing intuitive, self-serve analytics for non-technical users',
       'Real estate investment teams gained a single source of truth for location and market data',
       'Reusable front-end component library increased development efficiency and scalability across teams',
       'Directly informed which new co-working locations to open, reducing expansion risk for WeWork',
