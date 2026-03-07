@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import TagBadge from './TagBadge';
-import {formatDate} from '@/lib/utils';
 
 interface DetailHeroProps {
   type: 'project' | 'case-study' | 'prototype';
