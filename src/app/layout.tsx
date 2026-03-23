@@ -21,7 +21,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){var t=localStorage.getItem('theme');document.documentElement.classList.toggle('dark',t!=='light');})();`,
+            __html: `(function(){var t=localStorage.getItem('theme');document.documentElement.classList.toggle('light',t!=='dark');})();`,
           }}
         />
       </head>

@@ -113,6 +113,30 @@ export default async function ProjectDetailPage({params}: Props) {
           </section>
         )}
 
+        {/* Coming Soon / AI Enhancement */}
+        {project.comingSoon && project.comingSoon.length > 0 && (
+          <section className="mb-10">
+            <h2 className="text-xl font-bold text-stone-900 dark:text-slate-100 mb-1">
+              What&apos;s Coming
+            </h2>
+            <p className="text-sm text-stone-500 dark:text-slate-500 mb-4">
+              AI-enhanced features in progress
+            </p>
+            <ul className="space-y-2">
+              {project.comingSoon.map((item, i) => (
+                <li
+                  key={i}
+                  className="flex items-start gap-3 text-stone-600 dark:text-slate-400">
+                  <span className="text-violet-500 dark:text-violet-400 mt-0.5 shrink-0">
+                    ◆
+                  </span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
         {/* Tech stack */}
         {/* {project.techStack && project.techStack.length > 0 && (
           <section className="mb-10">

@@ -37,6 +37,7 @@ export interface Project extends ContentBase {
   flowDiagram?: string;
   flowDiagramAlt?: string;
   link?: string;
+  comingSoon?: string[];
 }
 
 export interface CaseStudy extends ContentBase {

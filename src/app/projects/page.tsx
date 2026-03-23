@@ -20,7 +20,7 @@ export default function ProjectsPage() {
         <SectionHeading
           eyebrow="My Work"
           title="Projects"
-          subtitle="Products and features I've shipped — from 0→1 builds to platform-scale improvements."
+          subtitle="Products and features I've shipped, from 0→1 builds to platform-scale improvements."
           className="mb-12"
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
