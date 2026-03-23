@@ -98,6 +98,10 @@ Deploy easily to Vercel, Netlify, or any hosting platform that supports Next.js.
 - **Tailwind CSS**: Utility-first styling
 - **ESLint**: Code quality
 
+## Releases
+
+See [CHANGELOG.md](./CHANGELOG.md) for the full release history.
+
 ## License
 
 MIT License - feel free to use this template for your portfolio
