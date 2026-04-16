@@ -1,9 +1,11 @@
 import {Metadata} from 'next';
+import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import SectionHeading from '@/components/ui/SectionHeading';
 import PrototypeCard from '@/components/cards/PrototypeCard';
 import {mockPrototypes} from '@/data/mock/prototypes';
+import {ArrowLeft} from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Prototypes — Paresh Salunke',
@@ -17,6 +19,12 @@ export default function PrototypesPage() {
     <>
       <Navigation />
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-1.5 text-sm text-stone-500 dark:text-slate-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors mb-8 group">
+          <ArrowLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />
+          Back to home
+        </Link>
         <SectionHeading
           eyebrow="Design & Validation"
           title="Prototypes"

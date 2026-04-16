@@ -9,7 +9,6 @@ import {useTheme} from '@/components/ThemeProvider';
 
 const navLinks = [
   {label: 'Projects', href: '/projects'},
-  {label: 'Case Studies', href: '/case-studies'},
   {label: 'Prototypes', href: '/prototypes'},
   {label: 'About', href: '/#about'},
   {label: 'Contact', href: '/#contact'},

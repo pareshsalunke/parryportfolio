@@ -53,9 +53,9 @@ export default function HeroSection() {
                 View My Work <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
-                href="/case-studies"
+                href="/prototypes"
                 className="inline-flex items-center gap-2 px-7 py-3.5 bg-transparent border border-amber-300 dark:border-slate-700 hover:border-amber-400 dark:hover:border-slate-500 text-stone-700 dark:text-slate-300 hover:text-stone-900 dark:hover:text-slate-100 font-semibold rounded-xl transition-all duration-200">
-                Read Case Studies
+                Prototypes
               </Link>
               <a
                 href="/Resume-PareshSalunke.pdf"

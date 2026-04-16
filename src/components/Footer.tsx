@@ -23,9 +23,6 @@ export default function Footer() {
             <Link href="/projects" className="hover:text-stone-700 dark:hover:text-slate-300 transition-colors">
               Projects
             </Link>
-            <Link href="/case-studies" className="hover:text-stone-700 dark:hover:text-slate-300 transition-colors">
-              Case Studies
-            </Link>
             <Link href="/prototypes" className="hover:text-stone-700 dark:hover:text-slate-300 transition-colors">
               Prototypes
             </Link>

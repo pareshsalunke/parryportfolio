@@ -1,6 +1,7 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import ThemeProvider from '@/components/ThemeProvider';
+import ScrollUpButton from '@/components/ui/ScrollUpButton';
 import {Analytics} from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       </head>
       <body className="bg-amber-50 text-stone-900 dark:bg-slate-900 dark:text-white antialiased">
         <ThemeProvider>{children}</ThemeProvider>
+        <ScrollUpButton />
         <Analytics />
       </body>
     </html>

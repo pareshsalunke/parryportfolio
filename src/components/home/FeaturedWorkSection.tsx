@@ -17,8 +17,8 @@ export default function FeaturedWorkSection({items}: FeaturedWorkSectionProps) {
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
           <SectionHeading
             eyebrow="Featured Work"
-            title="Selected projects & case studies"
-            subtitle="A sample of what I've shipped, researched, and prototyped."
+            title="Selected projects & prototypes"
+            subtitle="A sample of what I've shipped and prototyped."
           />
           <Link
             href="/projects"
@@ -40,10 +40,9 @@ export default function FeaturedWorkSection({items}: FeaturedWorkSectionProps) {
         </div>
 
         {/* Browse by type */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-12">
           {[
             {label: 'All Projects', href: '/projects'},
-            {label: 'All Case Studies', href: '/case-studies'},
             {label: 'All Prototypes', href: '/prototypes'},
           ].map(({label, href}) => (
             <Link
