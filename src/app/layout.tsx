@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Software Engineer turned Product Manager. Building products at the intersection of technology and user needs.',
   openGraph: {
-    title: 'Paresh Salunke — Product Manager',
+    title: 'Paresh Salunke - Product Manager',
     description:
       'Software Engineer turned Product Manager. Building products at the intersection of technology and user needs.',
     type: 'website',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="en" className="light" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
