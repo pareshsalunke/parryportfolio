@@ -20,10 +20,14 @@ export default function Footer() {
 
           {/* Nav links */}
           <div className="flex items-center gap-4 text-xs text-stone-600">
-            <Link href="/projects" className="hover:text-stone-700 dark:hover:text-slate-300 transition-colors">
+            <Link
+              href="/projects"
+              className="hover:text-stone-700 dark:hover:text-slate-300 transition-colors">
               Projects
             </Link>
-            <Link href="/prototypes" className="hover:text-stone-700 dark:hover:text-slate-300 transition-colors">
+            <Link
+              href="/prototypes"
+              className="hover:text-stone-700 dark:hover:text-slate-300 transition-colors">
               Prototypes
             </Link>
           </div>
@@ -31,7 +35,7 @@ export default function Footer() {
           {/* Socials */}
           <div className="flex items-center gap-4">
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/pareshsalunke"
               target="_blank"
               rel="noopener noreferrer"
               className="text-stone-500 dark:text-slate-600 hover:text-stone-700 dark:hover:text-slate-400 transition-colors"
@@ -39,7 +43,7 @@ export default function Footer() {
               <Linkedin className="w-4 h-4" />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/pareshsalunke"
               target="_blank"
               rel="noopener noreferrer"
               className="text-stone-500 dark:text-slate-600 hover:text-stone-700 dark:hover:text-slate-400 transition-colors"
